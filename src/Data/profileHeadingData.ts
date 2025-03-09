@@ -8,11 +8,11 @@ const socialIcons = [
     { name: "Google_Scholar_logo", icon: "./Google_Scholar_logo.svg", url: "http://facebook.com" },
     { name: "ResearchGate_icon_SVG", icon: "./ResearchGate_icon_SVG.svg", url: "http://facebook.com" },
   ];
-  const name = "Dipon Talukder";
+  const name = "D Talukder";
   const designations = [
-    "Senior Assesmemt developer , workera.ai",
-    "Adjunct Lecturer, East Delta University",
-    "Research Assistant, Universal Machine"
+    "Senior  developer , Ai company", 
+    "Adjunct Lecturer, Human University",
+    "Research Assistant, Happy Happy"
   ]
 const profileHeadingData = {
     name,

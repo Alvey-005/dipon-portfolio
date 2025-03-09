@@ -9,7 +9,7 @@ export const Homedata = {
               domains, among which smart city, mobility, healthcare, cultural
               heritage and natural disasters.`,
     secondTitle:'About Me',
-    aboutMe: `<p>I am a Senior Assessment Developer at Workera. I earned my bachelor’s in
+    aboutMe: `<p>I am a Senior Assessment Developer at Ai company. I earned my bachelor’s in
         Computer Science and Engineering from the Chittagong University of
         Engineering and Technology (CUET), Bangladesh. I am extremely fortunate
         to be advised by Dr. Mohammed Moshiul Hoque. I am a recipient of Fatima
