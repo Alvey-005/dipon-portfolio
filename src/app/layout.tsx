@@ -1,44 +1,41 @@
-import type { Metadata } from "next";
-import Script from "next/script";
 import { Work_Sans } from "next/font/google";
 import "./globals.css";
 import Sidebar, { SidebarItem } from "@/components/custom/SideBar";
 import ProfileHeading from "@/components/custom/ProfileHeading";
 import { Toaster } from "@/components/ui/toaster";
-import Head from "next/head";
 import PaginationButtons from "@/components/custom/PaginationButtons ";
 import sideBarData from "@/Data/layout";
 
 const workSans = Work_Sans({ subsets: ["latin"] });
-const siteUrl = "http://dipon.netlify.app";
-export const metadata: Metadata = {
-  title: "Dipon Talukder Dhruvo",
-  description:
-    "Explore the academic portfolio of Dipon Talukder, a graduate student specializing in ML,AI. Discover research projects, publications, and professional achievements in ML AI, showcasing a commitment to advancing knowledge and contributing to the field.",
-  keywords: "DiponTalukder,Dipon,Dipon,Dipon,Dip",
-  robots: "index, follow",
-  openGraph: {
-    title: "Dipon Talukder Dhruvo",
-    description:
-      "Explore the academic portfolio of Dipon Talukder, a graduate student specializing in ML,AI. Discover research projects, publications, and professional achievements in ML AI, showcasing a commitment to advancing knowledge and contributing to the field.",
-    url: siteUrl,
-    images: [
-      {
-        url: `${siteUrl}/profilePic.jpg}`,
-        width: 800,
-        height: 600,
-        alt: "Profile  picture",
-      },
-    ],
-    type: "website",
-  },
-  // twitter: {
-  //   card: "summary_large_image",
-  //   title: "Your Site Title",
-  //   description: "Your site description here",
-  //   // image: 'https://yourwebsite.com/image.jpg',
-  // },
-};
+// const siteUrl = "http://dipon.netlify.app";
+// export const metadata: Metadata = {
+//   title: "Dipon Talukder Dhruvo",
+//   description:
+//     "Explore the academic portfolio of Dipon Talukder, a graduate student specializing in ML,AI. Discover research projects, publications, and professional achievements in ML AI, showcasing a commitment to advancing knowledge and contributing to the field.",
+//   keywords: "DiponTalukder,Dipon,Dipon,Dipon,Dip",
+//   robots: "index, follow",
+//   openGraph: {
+//     title: "Dipon Talukder Dhruvo",
+//     description:
+//       "Explore the academic portfolio of Dipon Talukder, a graduate student specializing in ML,AI. Discover research projects, publications, and professional achievements in ML AI, showcasing a commitment to advancing knowledge and contributing to the field.",
+//     url: siteUrl,
+//     images: [
+//       {
+//         url: `${siteUrl}/profilePic.jpg}`,
+//         width: 800,
+//         height: 600,
+//         alt: "Profile  picture",
+//       },
+//     ],
+//     type: "website",
+//   },
+//   // twitter: {
+//   //   card: "summary_large_image",
+//   //   title: "Your Site Title",
+//   //   description: "Your site description here",
+//   //   // image: 'https://yourwebsite.com/image.jpg',
+//   // },
+// };
 
 export default function RootLayout({
   children,
@@ -48,7 +45,7 @@ export default function RootLayout({
   const { sideBaritems } = sideBarData;
   return (
     <html lang="en">
-      <Head>
+      {/* <Head>
         <link rel="canonical" href="" />
         <script
           type="application/ld+json"
@@ -66,7 +63,7 @@ export default function RootLayout({
             }),
           }}
         />
-      </Head>{" "}
+      </Head>{" "} */}
       <body className={workSans.className}>
         <div className="flex ">
           <Sidebar items={sideBaritems} />
@@ -79,11 +76,6 @@ export default function RootLayout({
           </div>
         </div>
         <Toaster />
-        <Script
-          type="text/javascript"
-          id="clustrmaps"
-          src="//clustrmaps.com/map_v2.js?d=w8Eh2mRJQmsa0rf2sLopGxCJtHJdyEmnLfeyme6dAM8&cl=ffffff&w=a"
-        />
       </body>
     </html>
   );
