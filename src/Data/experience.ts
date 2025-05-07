@@ -78,11 +78,35 @@ Mathematics for AI.`,
         },
       ],
     },
+
+    {
+      company: "Universal Machine",
+      url:'https://universalmachine.io/',
+      roles: [
+        {
+          title: "Software Engineer - ||",
+          address:"(Remote) California, USA",
+          duration: "April, 2025 - Present",
+          responsibilities: [
+            `Developing in-game agents to improve gaming experience using LangChain`
+          ],
+        },
+        {
+          title: "Assessment Developer",
+          address:"(Remote) California, USA",
+          duration: "June, 2021 - August,2024",
+          responsibilities: [
+            "Led a team of 5 engineers to build scalable software solutions.",
+            "Mentored junior developers and conducted code reviews.",
+          ],
+        },
+      ],
+    },
   ];
   const researchExperiences = [
     {
       company: "Universal Machine",
-      url:'https://workera.ai/',
+      url:'https://www.nsaquib.org/',
       roles: [
         {
           title: "Research Assistant",
@@ -121,7 +145,7 @@ Digital Electronics & Pulse Techniques, and Compiler Design`,
         {
           title: "Trainer",
           address:"Chittagong, Bangladesh",
-          duration: "April, 2024 - Present",
+          duration: "April, 2024 - December, 2025",
           // courses: trainerCourses,
           responsibilities: [
             `Delivering training on Machine Learning, Deep Learning, and Computer Vision domains.`,
